@@ -25,6 +25,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <ApplicationInsightsResourceId>/subscriptions/18d8f4f4-8ee9-4ed1-b44f-8caa83a9f4ac/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/web</ApplicationInsightsResourceId>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -95,10 +96,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="api\addUser.php" />
+    <Content Include="api\conn.php" />
+    <Content Include="api\getusers.php" />
+    <Content Include="api\testconn.php" />
+    <Content Include="controllers\usersController.js" />
+    <Content Include="db\getpayeddb.sql" />
+    <Content Include="js\dirPagination.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="pages\users\users.html" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
@@ -209,7 +218,6 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="api\" />
     <Folder Include="pages\account\" />
     <Folder Include="pages\customer\" />
     <Folder Include="pages\investment\" />
