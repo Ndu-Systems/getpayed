@@ -12,13 +12,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>GET-PAYED</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/font-awesome.css" rel="stylesheet">
 <script src="js/jquery.min.js"> </script>
 <!-- Mainly scripts -->
 <script src="js/jquery.metisMenu.js"></script>
@@ -35,14 +35,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				return false;
 			}
 
-			
+
 
 			$('#toggle').click(function () {
 				screenfull.toggle($('#container')[0]);
 			});
-			
 
-			
+
+
 		});
 		</script>
 
@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 }
             });
 
-           
+
         });
 
     </script>
@@ -96,14 +96,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="angularjs/config.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.js"></script>
-    <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+  <!--  <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>-->
     <script src="angularjs/app.js"></script>
-    <script src="routes/routes.js"></script>   
+    <script src="routes/routes.js"></script>
+		<script src="js/dirPagination.js"></script>
     <!--/angularjs compnents-->
 
     <!--Controllers-->
     <script src="controllers/accountController.js"></script>
     <script src="controllers/adminController.js"></script>
+		<script src="controllers/usersController.js"></script>
     <!--/controllers-->
 </head>
 <body>
@@ -111,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!----->
     <ng-view></ng-view>
- 
+
 </div>
 <!---->
 <!--scrolling js-->
@@ -121,4 +123,3 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="js/bootstrap.min.js"> </script>
 </body>
 </html>
-

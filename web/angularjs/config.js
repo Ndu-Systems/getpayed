@@ -1,9 +1,10 @@
 ﻿var extention = ".php";
-var host = "http://localhost/git.dreamfunders/portal/api/";
-//var host = "http://ndu-systems.net/demo/dreamfunders/api/";
-
+var host = "http://ndu-systems.net/demo/getpayed/api/";
+var isLocal = true;
+if(isLocal){
+    var host = "http://localhost/git.getpayed/portal/web/api/";
+}
 function GetApiUrl(serviceName) {
-
     var url = host + serviceName + extention;
     return url;
 }
@@ -17,7 +18,7 @@ function getDate() {
     var dateTime = date + ' ' + time;
     return dateTime;
 }
-// email tempates 
+// email tempates
 
 function WelcomeMessage() {
     var msg = "";
